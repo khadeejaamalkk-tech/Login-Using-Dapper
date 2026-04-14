@@ -74,6 +74,7 @@ namespace LoginRegistrationUsingDapper.Repositeries
         }
         public async Task<object> GetUser(int id)
         {
+
             using (var connection = _context.CreateConnection())
             {
                 var userQuery = @"
